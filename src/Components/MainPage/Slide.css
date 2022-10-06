@@ -1,0 +1,147 @@
+.flexboxes {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6%;
+  margin: right 1px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexboxes img {
+  height: auto;
+  width: 65%;
+}
+
+.imagesPara {
+  margin-left: 6%;
+  font-size: 43px;
+  letter-spacing: 5px;
+  font-weight: 550;
+  color: #4f585e;
+}
+.test {
+  margin-top: 3%;
+  padding-top: 0.5%;
+  background-color: #fff600;
+  height: 350px;
+  width: 100%;
+}
+.test p {
+  margin-left: 4%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.test h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.test ol li {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* STYLES FOR CIRCULAR IMAGES */
+.circle img {
+  height: auto;
+  width: 60%;
+}
+.test li {
+  font-size: 22px;
+  margin-left: 50%;
+}
+.test h2 {
+  font-size: 50px;
+  color: brown;
+}
+
+/* CATEGORIES SECTION */
+.categories {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  flex-wrap: wrap;
+}
+
+.categories div {
+  margin-top: 10px;
+}
+.categories div img{
+  transition: all 0.5s ease-in-out;
+}
+
+.categories div img:hover{
+  transform: scale(1.1);
+}
+
+/* INDIAN COLTHES SECTION */
+.indian {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  flex-wrap: wrap;
+}
+.indian img {
+  height: auto;
+  width: 90%;
+  row-gap: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.indian img:hover{
+  transform: scale(1.05);
+}
+
+/* ACCESSORIES SECTION */
+.acc {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6%;
+  flex-wrap: wrap;
+}
+
+/* STYLES FOR IMAGES IN ACCESSORIES SECTION */
+.acc img {
+  height: auto;
+  width: 80%;
+  row-gap: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+.acc img:hover{
+  transform: scale(1.05);
+}
+
+.flexboxes div {
+  margin-top: 20px;
+}
+
+.flexboxes div img:hover {
+  cursor: pointer;
+}
+
+.categories div img:hover {
+  cursor: pointer;
+}
+
+.indian div {
+  margin-top: 30px;
+}
+
+/* CHANGING CURSOR STYLE WHEN HOVERNG OVER CARDS */
+.indian div img:hover {
+  cursor: pointer;
+}
+
+.acc div {
+  margin-top: 20px;
+}
+
+.acc div img:hover {
+  cursor: pointer;
+}

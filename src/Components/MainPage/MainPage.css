@@ -1,0 +1,11 @@
+.cardDiv {
+  display: flex;
+}
+
+.cardDiv div{
+  margin: 0px 10px;
+}
+
+.cardDiv div:hover {
+  cursor: pointer;
+}

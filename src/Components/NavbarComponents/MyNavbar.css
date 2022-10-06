@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* navbar Container */
+.container {
+  height: 120px;
+  /* background-color: #606060; */
+  background-color: #536162;
+  display: flex;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.container .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+.container .navbar ul li a:hover {
+  color: #ffffff;
+  background-color: grey;
+}
+
+.container .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar i {
+  background-color: #ffffff;
+  height: 2px;
+}
+
+#myLogo {
+  flex: 1;
+  color: white;
+  font-size: 28px;
+  padding-left: 5px;
+}
+#myLogo p {
+  font-size: 16px;
+}
+@media only screen and (max-width: 650px) {
+  .total {
+    display: none;
+  }
+  #myLogo {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .container {
+    justify-content: space-between;
+  }
+
+  .container .logo {
+    flex: 1;
+  }
+
+  .containre #myLogo {
+    flex: 1;
+  }
+
+  .container .navbar {
+    flex: 0;
+  }
+
+  .container .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #e8e8e8;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .container .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #555555;
+  }
+
+  .container .navbar ul .close {
+    display: block;
+  }
+
+  .container .navbar .icon-bar {
+    display: flex;
+  }
+
+  .container .navbar ._Menus-show {
+    left: 0;
+  }
+}
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
